@@ -26,3 +26,12 @@ export const createProductsbyIdMarkup = ({
   <p>${description}</p>
 </div>`;
 };
+
+export const createProduct = ({ id, title, price, description }) => {
+  return `<div class="productCard" data-id="${id}">
+  
+  <h2>${title}</h2>
+  <p>${price}</p>
+  <p>${description}</p>
+</div>`;
+};
